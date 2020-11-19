@@ -1,0 +1,264 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@font-face {
+  font-family: AntiqueStore;
+  src: url("../fonts/SpectralSC-ExtraLight.ttf");
+}
+
+@font-face {
+  font-family: Header;
+  src: url("../fonts/SpectralSC-SemiBold.ttf")
+}
+@font-face {
+  font-family: paragraph;
+  src: url("../fonts/Lato-Regular.ttf")
+}
+
+.logo
+{
+	margin-top: 60px;
+	margin-bottom: 40px;
+	font-family: AntiqueStore;
+	color: #698474;
+}
+
+.navbar
+{
+	display: flex;
+	align-items: center;
+	padding: 10px;
+}
+nav
+{
+	flex: 1;
+	text-align: center;
+}
+
+nav ul
+{
+	list-style: none;
+	display: inline-block;
+}
+
+nav ul li
+{
+	display: inline-block;
+	margin-right: 40px;
+	font-family: Header;
+	font-size: 15px;
+	position: relative;
+}
+
+.dropdown ul li a
+{
+	padding: 10px 0px;
+	display: flex;
+	color:#fcf8f3;
+	font-family: Header;
+	font-size: 15px;
+}
+
+.dropdown ul li a:hover
+{
+	color: #ffaaa5;
+}
+
+nav ul li a
+{
+	text-decoration: none;
+	color: #698474;
+	transition: background 0.3s;
+	border-radius: 10px;
+	padding: 10px 10px;
+}
+
+nav ul li a:hover
+{
+	background: #698474;
+	color: #fcf8f3;
+	border-radius: 10px;
+	padding: 10px 10px;
+}
+
+.dropdown{
+	position: absolute;
+	left: 0;
+	top: 30px;
+	padding: 10px 8px;
+	background-color: #698474;
+	border-radius: 5px;
+	visibility: hidden;
+}
+
+nav ul li a:hover +.dropdown{
+	visibility: visible;
+}
+
+.row
+{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.pagephoto
+{
+	flex-basis: 100%;
+	min-width: 300px;
+}
+
+.pagephoto img 
+{
+	max-width: 100%;
+	padding: 50px 0;
+}
+
+.categories
+{
+	margin:30px 0;
+}
+
+.col-3
+{
+	flex-basis: 30%;
+	min-width: 250px;
+	margin-bottom: 30px;
+}
+
+.col-3 img
+
+{
+	width: 100%;
+}
+
+.small-container
+{
+	max-width: 1080px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.row .col-3 h3
+{
+	font-family: AntiqueStore;
+	margin-top: 10px;
+	color: #698474;
+	border-radius: 30px;
+}
+
+.header
+{
+	font-family: AntiqueStore;
+	margin-top:100px;
+	margin-bottom: 40px;
+	color: #698474;
+}
+
+.col-3 a
+{
+	text-decoration: none;
+	color: #698474;
+	transition: color 0.5s
+}
+
+.col-3 a:hover
+{
+	color: #ffaaa5;
+}
+
+.row .small-container h2
+{
+	font-family: AntiqueStore;
+	margin-top: 70px;
+	margin-bottom: 30px;
+	color: #698474;
+}
+
+.row .small-container p
+{
+	font-family: paragraph;
+	line-height: 30px;
+	font-size: 18px;
+	margin-bottom: 30px;
+	color: #545454;
+}
+
+h4
+{
+	font-family: AntiqueStore;
+	color: #698474;
+	font-size: 20px;
+}
+
+.col-2
+{
+	flex-basis: 50%;
+	min-width: 300px;
+}
+
+.col-2 img 
+{
+	max-width: 100%;
+	padding: 50px 0;
+}
+
+.col-2 h1
+{
+	font-size: 50px;
+	line-height: 60px;
+	margin: 25px 0;
+}
+
+.btn
+{
+	display:inline-block;
+	background: #698474;
+	text-decoration: none;
+	color: white;
+	padding: 8px 30px;
+	margin: 30px 0;
+	border-radius: 30px;
+	transition: background 0.5s;
+}
+
+.btn:hover
+{
+	background: #ffaaa5;
+}
+
+.container
+{
+	max-width: 1300px;
+	margin: auto;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.biggercontainer
+{
+	background:#E1EFE7;
+}
+
+.biggercontainer .container .row .col-2 h1
+{
+	font-family: AntiqueStore;
+	font-size: 40px;
+	color: #698474;
+}
+
+.biggercontainer .container .row .col-2 p
+{
+	font-family: paragraph;
+	font-size: 15px;
+	line-height: 30px;
+	color: #698474;
+}
+
